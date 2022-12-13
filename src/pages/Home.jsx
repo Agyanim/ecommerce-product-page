@@ -10,8 +10,10 @@ const Home = () => {
         <Header />
       </div>
 
-      <section className="lg:flex lg:gap-[5rem]
+      <section className="lg:flex lg:gap-[2.5rem]
       lg:w-[80vw] lg:mx-auto lg:justify-center mt-4
+      xl:gap-[5rem] xl:mt-8
+
       ">
 
         <div className="

@@ -71,7 +71,7 @@ const ShoeCard = () => {
       <div
         key={index}
         id={index}
-        className="w-[5rem] h-[5rem] rounded-lg group
+        className="w-[4rem] h-[5rem] rounded-lg group
     cursor-pointer  hover:border-2 hover:border-[#f27113] shrink-0 transition-opacity duration[2s] ease-in
     xl:w-[6rem]
     "
@@ -95,8 +95,9 @@ const ShoeCard = () => {
   return (
     <div>
       <div
-        className="w-[24rem] h-[18rem] bg-[#f08110] transition-all duration-[2s] ease-out relative
-        lg:rounded-2xl lg:w-[24rem] lg:h-[24rem] md:w-[80vw] md:h-[28rem] md:rounded-lg xl:w-[28rem] xl:h-[28rem]
+        className="w-[24rem] h-[18rem] bg-[#f08110] transition-all duration-[2s] ease-out relative rounded-2xl 
+       lg:w-[20rem] lg:h-[20rem] md:w-[80vw] md:h-[28rem] md:rounded-lg xl:w-[28rem] xl:h-[28rem]
+      
 
 "
         style={{
@@ -106,21 +107,21 @@ const ShoeCard = () => {
         }}
       >
         <div
-          className="prev absolute top-[50%] ml-2 rounded-full bg-white shrink-0 w-8 h-8 flex justify-center items-center cursor-pointer lg:hidden"
+          className="prev absolute top-[50%] ml-6 rounded-full bg-white shrink-0 w-8 h-8 flex justify-center items-center cursor-pointer lg:hidden"
           onClick={prevHandler}
         >
           <img src={Prev} alt="previous" />
         </div>
         <div
-          className="next absolute right-0 top-[50%] mr-2 rounded-full bg-white shrink-0 w-8 h-8 flex justify-center items-center cursor-pointer lg:hidden"
+          className="next absolute right-6 top-[50%] mr-2 rounded-full bg-white shrink-0 w-8 h-8 flex justify-center items-center cursor-pointer lg:hidden"
           onClick={nextHandler}
         >
           <img src={Next} alt="next" />
         </div>
       </div>
 {/*  */}
-      <div className=" gap-[1.3rem] my-8 hidden
-      lg:flex 
+      <div className=" gap-[0.6rem] my-8 hidden
+      lg:flex xl:gap-[1.2rem]
       ">
         {shoeThumbnailRender}
       </div>

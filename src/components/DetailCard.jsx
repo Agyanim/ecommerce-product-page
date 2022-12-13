@@ -5,11 +5,11 @@ import Cart from "../assets/images/icon-cart.svg";
 import { useContext } from "react";
 import { AgyanimContext } from "../context/UseContext";
 import { useDispatch, useSelector } from "react-redux";
-import { addCount} from "../store/slice/countSlice";
+import { addCount } from "../store/slice/countSlice";
 
 const DetailCard = () => {
   const contextVar = useContext(AgyanimContext);
-  const  [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   // const count = contextVar.count;
   // const setCount = contextVar.setCount;
   const price = contextVar.price;
@@ -21,7 +21,7 @@ const DetailCard = () => {
 
   const plusHandler = () => {
     if (count < 3) {
-      setCount((count) => count +1);
+      setCount((count) => count + 1);
 
       // dispatch(increaseCount());
     }
@@ -35,22 +35,23 @@ const DetailCard = () => {
   };
 
   const andToCartHandler = () => {
-          dispatch(addCount(count));
-
+    dispatch(addCount(count));
   };
 
   return (
     <div
       className="w-[90vw] m-auto p-4
-    lg:w-[35vw] lg:mt-10 lg:mr-8 md:w-[60vw]
-    xl:w-[40vw]
+      md:w-[65vw]
+    lg:w-[38vw] lg:mt-10 lg:mr-8 
+    xl:w-[35vw] 
+    xl:mt-[4rem]
     "
     >
       <div className="">
         <h1
           className="uppercase  text-[#ff6c02]/70 font-bold mb-4
         md:text-lg md:mt-4
-        lg:mb-1
+        lg:mb-1 lg:mt-0
         xl:text-xl
         "
         >
@@ -58,16 +59,16 @@ const DetailCard = () => {
         </h1>
         <h1
           className="text-[2rem] font-bold mb-8
-        lg:text-[2.2rem] lg:mb-4
+        lg:text-[2rem] lg:mb-4
         md:text-[2rem] xl:text-[3rem]
         "
         >
           Fall Limited Edition Sneakers
         </h1>
         <p
-          className="text-[14px] mb-8 text-black/50
-        lg:text-[1rem] lg:mb-4 md:text-[1.2rem]
-        xl:text-[1.4rem]
+          className="text-[16px] mb-8 text-black/50
+        lg:text-[0.9rem] lg:mb-4 md:text-[1.2rem]
+        xl:text-[1.2rem]
         "
         >
           These low-profile sneakers are your perfect casual wear companion.
@@ -80,7 +81,7 @@ const DetailCard = () => {
         "
         >
           <div className="flex gap-4 place-items-center">
-            <p className="text-[2.5rem] font-bold">$125.00</p>
+            <p className="text-[2rem] font-bold">$125.00</p>
             <p className="text-[#ff6c02] font-extrabold text-lg bg-[#fae0c8be] px-1 rounded-md">
               {" "}
               50%

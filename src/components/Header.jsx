@@ -103,7 +103,9 @@ const Header = () => {
             </ul>
           </nav>
           <div
-            className="avatar-cart-wrapper flex justify-end items-center w-[18rem] relative md:w-[32rem]
+            className="avatar-cart-wrapper flex justify-end items-center w-[22rem] relative 
+            md:w-[32rem] 
+
             "
           >
             <div
@@ -119,7 +121,8 @@ const Header = () => {
                 </div>
                 <h1 className="ml-2 text-black/50">
                   {product.decription} <br />
-                  {price} x {count} <span className="font-bold text-black">&#36;{total}</span>
+                  {price} x {count}{" "}
+                  <span className="font-bold text-black">&#36;{total}</span>
                 </h1>
               </div>
               <div className="lg:w-[20Vw] flex justify-center w-[90%] ">
